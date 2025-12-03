@@ -1,0 +1,382 @@
+/* ===============================================
+   Hike Finder – style.css
+   =============================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==================== HEADER & NAVIGATION ==================== */
+header {
+    background: #0b3d91;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo img {
+    height: 60px;
+    border-radius: 8px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    background: #fc5c65;
+    transform: translateY(-2px);
+}
+
+/* ==================== HERO (Home page) ==================== */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.8);
+    width: 90%;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.4rem;
+}
+
+/* ==================== GALLERY – Bonus Feature (Home) ==================== */
+.gallery {
+    padding: 4rem 1rem;
+    background: white;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+    color: #0b3d91;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-container img {
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.10);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* ==================== ABOUT PAGE ==================== */
+.about-content {
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.about-content h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    color: #0b3d91;
+    margin-bottom: 3rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text ul {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.about-text li {
+    margin-bottom: 0.8rem;
+}
+
+.about-image img {
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* ==================== TOURS PAGE ==================== */
+.tours-intro {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #0b3d91;
+    color: white;
+}
+
+.tours-intro h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.tours-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2.5rem;
+    max-width: 1300px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.tour-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.tour-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 1.8rem;
+}
+
+.tour-info h3 {
+    color: #0b3d91;
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.tour-info p:last-of-type {
+    font-weight: bold;
+    color: #fc5c65;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+/* Video Section – Bonus Feature (Tours page) */
+.video-section {
+    max-width: 1000px;
+    margin: 5rem auto;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.video-section h2 {
+    margin-bottom: 2rem;
+    color: #0b3d91;
+    font-size: 2.2rem;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ==================== CONTACT FORM ==================== */
+.contact-form {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 3rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #0b3d91;
+    font-size: 2.5rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #fc5c65;
+}
+
+.contact-form button {
+    margin-top: 2.5rem;
+    padding: 1rem 3rem;
+    background: #fc5c65;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    { background: #e04a53; }
+
+.email-link {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+}
+
+.email-link a {
+    color: #0b3d91;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-link a:hover {
+    text-decoration: underline;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    background: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 5rem;
+}
+
+footer a {
+    color: #fc5c65;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-text h2 { font-size: 2.4rem; }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .hero-text h2 { font-size: 2rem; }
+    .hero-text p { font-size: 1.2rem; }
+}
+
+@media (max-width: 480px) {
+    .gallery-container img { width: 100%; }
+    .tour-card img { height: 180px; }
+}
+

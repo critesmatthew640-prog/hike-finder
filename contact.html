@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hike Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Hike Finder Logo">
+            <h1>Hike Finder</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>Get In Touch</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- Free form handler -->
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="_replyto" required>
+
+                <label for="phone">Phone (optional)</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <p class="email-link">
+                Or email us directly: 
+                <a href="mailto:info@hikefinder.com">info@hikefinder.com</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Hike Finder | 
+           <a href="https://www.nationalgeographic.com" target="_blank">National Geographic</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
